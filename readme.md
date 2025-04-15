@@ -83,18 +83,18 @@ A diferença drástica nas alturas (BST 290 vs 19 AVL) demonstra claramente o tr
 
 ## iv) análise crítica sobre a análise assintótica e os tempos obtidos.
 ### Árvore Binária (BST)
-
+```
 Melhor Caso: O(1) - O elemento procurado é a raiz da árvore.
 Caso Médio: O(log n) - Assume-se que a árvore está razoavelmente balanceada (o que acontece, em média, com inserções aleatórias). A cada passo, metade da subárvore restante é descartada.
 Pior Caso: O(n) - Acontece quando a árvore degenera em uma estrutura semelhante a uma lista ligada (por exemplo, inserindo chaves em ordem estritamente crescente ou decrescente). Neste caso, a altura h torna-se n, e a busca pode precisar percorrer todos os nós.
-
+```
 
 ### AVL
-
+```
 Melhor Caso: O(1) - O elemento é a raiz.
 Caso Médio: O(log n) - A busca segue um caminho da raiz até uma folha (ou o nó).
 Pior Caso: O(log n) - Como a altura é sempre logarítmica, a busca nunca levará mais que tempo logarítmico. Não existe pior caso O(n) para busca em AVL.
-
+```
 
  A AVL oferece garantia de desempenho O(log n) ao custo de uma implementação mais complexa,enquanto a BST é mais simples com pequena redução no desempenho
 

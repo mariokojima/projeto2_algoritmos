@@ -41,36 +41,36 @@ https://github.com/mariokojima/projeto2_algoritmos
 
 ### Tempo de carga (inserção da massa)
 
-BST: 0.557183 segundos
-AVL: 2.194416 segundos
+- BST: 0.557183 segundos
+- AVL: 2.194416 segundos
 
 ![Tempo de Carregamento](Tempo_Carregamento.png)
 
 
 ### Altura da Árvore
 
-BST: 290
-AVL: 19
+- BST: 290
+- AVL: 19
 
 ![Altura da Árvore](Altura_Arvore.png)
 
 ### Tempo de Busca
 
 Tempo total de 100 buscas
-BST: 0.001141 segundos (0.00001141 segundos por busca)
-AVL: 0.001038 segundos (0.00001038 segundos por busca)
+- BST: 0.001141 segundos (0.00001141 segundos por busca)
+- AVL: 0.001038 segundos (0.00001038 segundos por busca)
 
 Tempo total de 1000 buscas
-BST: 0.015193 segundos (0.00001519 segundos por busca)
-AVL: 0.009101 segundos (0.00000910 segundos por busca)
+- BST: 0.015193 segundos (0.00001519 segundos por busca)
+- AVL: 0.009101 segundos (0.00000910 segundos por busca)
 
 Tempo total de 10000
-BST: 0.121383 segundos (0.00001214 segundos por busca)
-AVL: 0.079656 segundos (0.00000797 segundos por busca)
+- BST: 0.121383 segundos (0.00001214 segundos por busca)
+- AVL: 0.079656 segundos (0.00000797 segundos por busca)
 
 Tempo total de 20000
-BST: 0.205426 segundos (0.00001027 segundos por busca)
-AVL: 0.169614 segundos (0.00000848 segundos por busca)
+- BST: 0.205426 segundos (0.00001027 segundos por busca)
+- AVL: 0.169614 segundos (0.00000848 segundos por busca)
 
 ![Tempo de Busca](Tempo_Quantidade.png)
 

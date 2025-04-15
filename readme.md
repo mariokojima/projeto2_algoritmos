@@ -3,7 +3,7 @@
 ### Mário Yoshiaki Kojima Junior | RA 10082703
 
 ## i) método: esclareça, por exemplo, tipo de equipamento utilizado, massa de dados, algoritmos utilizados, linguagem de programação, etc.
-
+```
 
 - Tipo de Equipamento : 
 Macbook Pro 
@@ -31,7 +31,7 @@ colunas:
 - Linguagem de Programação
 Python 3.09
 
-
+```
 
 ## ii) gráficos com as comparações de tempos medidos entre Árvore AVL e Árvore Binária de Busca para a BUSCA.
 ### Repositírio com código implementado:

@@ -64,11 +64,11 @@ Tempo total de 1000 buscas
 - BST: 0.015193 segundos (0.00001519 segundos por busca)
 - AVL: 0.009101 segundos (0.00000910 segundos por busca)
 
-Tempo total de 10000
+Tempo total de 10000 buscas
 - BST: 0.121383 segundos (0.00001214 segundos por busca)
 - AVL: 0.079656 segundos (0.00000797 segundos por busca)
 
-Tempo total de 20000
+Tempo total de 20000 buscas
 - BST: 0.205426 segundos (0.00001027 segundos por busca)
 - AVL: 0.169614 segundos (0.00000848 segundos por busca)
 

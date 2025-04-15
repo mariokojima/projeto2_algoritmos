@@ -157,34 +157,38 @@ print( avl.get_height() )
 print( 'altura da árvore BST' )
 print( bst.get_height() )
 
-# Escolher um número de buscas (ex: 1000)
-num_searches = 1000
-# Selecionar chaves aleatórias *que existem* na árvore para buscar
-# Usar as listas 'keys_to_insert_bst' ou 'keys_to_insert_avl' que guardamos
-search_keys = random.sample(keys_to_insert_bst, min(num_searches, len(keys_to_insert_bst)))
+def comparacao (quantidade):
+    num_searches = quantidade
+    # Selecionar chaves aleatórias *que existem* na árvore para buscar
+    # Usar as listas 'keys_to_insert_bst' ou 'keys_to_insert_avl' que guardamos
+    search_keys = random.sample(keys_to_insert_bst, min(num_searches, len(keys_to_insert_bst)))
+    # print(search_keys)
 
+    # Medir tempo de busca na BST
+    bst_search_times = []
+    start_time_bst_search = time.perf_counter()
+    for key in search_keys:
+        bst.search(key)
+    end_time_bst_search = time.perf_counter()
+    bst_search_time_total = end_time_bst_search - start_time_bst_search
+    bst_search_time_avg = bst_search_time_total / len(search_keys)
+    print(f"Tempo total de {len(search_keys)} buscas na BST: {bst_search_time_total:.6f} segundos")
+    print(f"Tempo médio por busca na BST: {bst_search_time_avg:.8f} segundos")
 
+    search_keys = random.sample(keys_to_insert_avl, min(num_searches, len(keys_to_insert_avl)))
+    # print(search_keys)
+    # Medir tempo de busca na AVL
+    avl_search_times = []
+    start_time_avl_search = time.perf_counter()
+    for key in search_keys:
+        avl.search(key)
+    end_time_avl_search = time.perf_counter()
+    avl_search_time_total = end_time_avl_search - start_time_avl_search
+    avl_search_time_avg = avl_search_time_total / len(search_keys)
+    print(f"Tempo total de {len(search_keys)} buscas na AVL: {avl_search_time_total:.6f} segundos")
+    print(f"Tempo médio por busca na AVL: {avl_search_time_avg:.8f} segundos")
 
-
-# Medir tempo de busca na BST
-bst_search_times = []
-start_time_bst_search = time.perf_counter()
-for key in search_keys:
-    bst.search(key)
-end_time_bst_search = time.perf_counter()
-bst_search_time_total = end_time_bst_search - start_time_bst_search
-bst_search_time_avg = bst_search_time_total / len(search_keys)
-print(f"Tempo total de {len(search_keys)} buscas na BST: {bst_search_time_total:.6f} segundos")
-print(f"Tempo médio por busca na BST: {bst_search_time_avg:.8f} segundos")
-
-# Medir tempo de busca na AVL
-avl_search_times = []
-start_time_avl_search = time.perf_counter()
-for key in search_keys:
-    avl.search(key)
-end_time_avl_search = time.perf_counter()
-avl_search_time_total = end_time_avl_search - start_time_avl_search
-avl_search_time_avg = avl_search_time_total / len(search_keys)
-print(f"Tempo total de {len(search_keys)} buscas na AVL: {avl_search_time_total:.6f} segundos")
-print(f"Tempo médio por busca na AVL: {avl_search_time_avg:.8f} segundos")
-
+comparacao (100)
+comparacao (1000)
+comparacao (10000)
+comparacao (20000)
